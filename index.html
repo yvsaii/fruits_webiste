@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root{
+            --primary--color: hsl(0, 0%, 100%);
+            --second--color: hsl(0, 0%, 1%);
+            --white-2: hsl(0, 0%, 98%);
+        }
+        li{
+            list-style: none;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .head{
+            height: 100vh;
+            background: linear-gradient(to right,rgb(249, 71, 71) 80%, rgba(249, 71, 71, 0.9) 20%);
+            display: flex;
+            flex-direction: column;
+            color: var(--primary--color);
+        }
+        .header{
+            padding: 1rem 9rem;
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary--color);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .nav-bar{
+            display: flex;
+            gap: 30px;
+
+        }
+        .nav-bar li{
+            padding: 7px 14px;
+            border-radius: 25px;
+        }
+        .nav-bar li:hover{
+            cursor: pointer;
+            background-color: var(--primary--color);
+            color: var(--second--color);
+
+        }
+        .main{
+            display: flex;
+            margin-bottom: 0;
+        }
+        .main .left{
+             flex: 1;
+             margin: 10rem auto 0rem 12rem;
+
+        }
+        .left h1{
+            font-size: 5rem;
+            margin: 10px 0px;
+            
+        }
+        #btn{
+            margin: 1rem 0rem;
+            padding: 7px 14px;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 25px;
+            border: none;
+            background-color: var(--primary--color);
+            color: hsl(0, 0%, 30%);
+            word-spacing: 4px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .main .right{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .right img{
+            width: 500px;
+            margin-left: 5rem;
+            
+        }
+        .logos{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 0px 20px;
+            font-size: 1.5rem;
+        }
+        .logos i{
+            cursor: pointer;
+        }
+        .logos i:hover{
+            color: hsl(0, 0%, 30%);
+        }
+        .fruits{
+            text-align: center;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .fruits img{
+            width: 110px;
+            padding: 10px 15px;
+            background-color: transparent;
+            border: 2px solid hsl(0, 0%, 100%);
+            border-radius: 12px;
+            cursor: pointer;
+
+        }
+        .fruits img:active{
+            border-radius: 4px solid hsl(0, 0%, 100%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="header">
+            <div class="logo">
+                <h1>fruits</h1>
+            </div>
+            <div class="nav-bar">
+                <li>Home</li>
+                <li>Menu</li>
+                <li>What's New</li>
+                <li>Contact</li>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left">
+                <h1>Eat Fresh
+                    <br>
+                    Everyday
+
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos doloribus suscipit laudantium? Dignissimos, illo maiores animi sapiente ipsa vero corrupti quo laboriosam asperiores quas placeat mollitia velit, ab quibusdam quae similique ad nostrum. Libero.
+                </p>
+                <button id="btn">
+                    Learn More
+                </button>
+            </div>
+            <div class="right">
+                <div class="img"><img src="images/apple.png" alt=""></div>
+                <div class="logos">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                
+            </div>
+        </div>
+       <div class="fruits">
+        <img src="images/guva.png" alt="">
+        <img src="images/banana.png" alt="">
+        <img src="images/pineapple.png" alt="">
+        <img src="images/watermelon.png" alt="">
+       </div>
+    </div>
+</body>
+</html>
